@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel File Merger</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Merge Excel Files</h1>
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="book1">Upload Book1.xlsx:</label>
+                <input type="file" name="book1" id="book1" required>
+            </div>
+            <div>
+                <label for="book2">Upload Book2.xlsx:</label>
+                <input type="file" name="book2" id="book2" required>
+            </div>
+            <button type="submit">Merge Files</button>
+        </form>
+    </div>
+</body>
+</html>
